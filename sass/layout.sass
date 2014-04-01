@@ -1,0 +1,233 @@
+$color1: #39b3d7
+$color2: #f0ad4e
+$color3: #d9534f
+
+ul, h1, h2, h3, p
+    padding: 0
+    margin: 0
+.clearfix
+    *zoom: 1
+    &:after
+        content: ""
+        display: table
+        clear: both
+
+ul
+    list-style: none
+    padding: 10px
+h1
+    text-align: center
+h2
+    padding: 10px
+
+.img-list li
+    float: left
+    margin: 0 10px 10px 0
+    img
+        width: 100px
+        height: 100px
+
+.layout-tags
+    position: absolute
+    top: 0
+    left: 0
+.switch-layout
+    width: 98%
+    li
+        float: left
+        white-space: nowrap
+        padding: 5px 10px
+        line-height: 24px
+        cursor: pointer
+        span
+            font-weight: bold
+        i
+            font-style: normal
+            font-weight: normal
+
+.header, .ft
+    padding: 10px
+    color: #fff
+    background: #3FA156
+    font-size: 30px
+    text-align: center
+.header
+    margin-top: 250px
+    background: #A31E39
+.ft
+    clear: both
+    zoom: 1
+
+/*基类*/
+.module-a, .module-b, .module-c, .header
+    margin-bottom: 10px
+    color: #fff
+.module-a
+    background: $color1
+.module-b
+    background: $color2
+.module-c
+    background: $color3
+.module-a p, .module-b p, .module-c p
+    padding: 10px
+
+.style0
+    width: auto
+
+/*固定宽度自适应*/
+.style1
+    width: 960px
+    margin: 0 auto
+
+/*主体先出现 - 左侧固定右侧自适应*/
+.style2
+    .module-a
+        float: right
+        width: 100%
+        margin-left: -200px
+        background: none
+        .module-box
+            margin-left: 200px
+            background: $color1
+    .module-b
+        float: right
+        width: 200px
+    .module-c
+        clear: both
+        zoom: 1
+
+
+/*主体先出现 - 右侧固定左侧自适应*/
+.style3
+    .module-a
+        float: left
+        width: 100%
+        margin-left: -200px
+        background: none
+
+        .module-box
+            margin-left: 200px
+            background: $color1
+    .module-b
+        float: left
+        width: 200px
+    .module-c
+        clear: both
+        zoom: 1
+
+
+/*三栏等高*/
+.style4
+    margin-bottom: 10px
+    overflow: hidden
+    .module-a, .module-b, .module-c
+        float: left
+        width: 33%
+        padding-bottom: 2000px
+        margin-bottom: -2000px
+
+
+/* 三栏左右固定 中间自适应   固定 百分比 固定*/
+.style5
+    .module-a
+        float: left
+        width: 300px
+    .module-b
+        float: right
+        width: 300px
+    .module-c
+        background: none
+        .module-box
+            margin: 0 300px
+            _margin: 0 297px
+            background: $color3
+
+
+
+/*左两栏固定右侧自适应 固定 固定 百分比*/
+.style6
+    .module-a, .module-b
+        float: left
+        width: 300px
+    .module-c
+        float: left
+        width: 100%
+        margin-left: -600px
+        background: none
+        .module-box
+            margin-left: 600px
+            background: $color3
+
+
+/*左两栏固定右侧自适应 百分比 固定 固定 */
+.style7
+    .module-a
+        float: left
+        width: 100%
+        margin-left: -600px
+        .module-box
+            margin-left: 600px
+    .module-b, .module-c
+        float: right
+        width: 300px
+
+/*中间固定左右自适应A 百分比 固定 百分比*/
+.style8
+    .module-a
+        float: left
+        width: 50%
+        margin-left: -251px
+        .module-box
+            margin-left: 251px
+    .module-b
+        float: left
+        width: 500px
+    .module-c
+        float: left
+        width: 50%
+        margin-left: -251px
+        background: none
+        .module-box
+            margin-left: 251px
+            background: $color3
+
+/*中间固定左右自适应B 百分比 固定 百分比*/
+.style9
+    .module-a
+        float: left
+        width: 40%
+    .module-b
+        float: left
+        width: 400px
+    .module-c
+        margin-left: 40%
+        background: none
+        .module-box
+            margin-left: 400px
+            background: $color3
+
+/*左侧固定 右两栏自适应 固定 百分比 百分比*/
+.style10
+    .module-a
+        float: left
+        width: 300px
+    .module-b
+        float: left
+        width: 40%
+    .module-c
+        margin-left: 40%
+        background: none
+        .module-box
+            margin-left: 300px
+            background: $color3
+
+/*右侧固定 左两栏自适应 百分比 百分比 固定*/
+.style11
+    .module-a
+        float: left
+        width: 30%
+    .module-b
+        float: right
+        width: 300px
+    .module-c
+        margin: 0 300px 0 30%

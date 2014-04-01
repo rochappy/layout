@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/* line 5, ../sass/layout.sass */
+ul, h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 8, ../sass/layout.sass */
+.clearfix {
+  *zoom: 1;
+}
+/* line 10, ../sass/layout.sass */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 15, ../sass/layout.sass */
+ul {
+  list-style: none;
+  padding: 10px;
+}
+
+/* line 18, ../sass/layout.sass */
+h1 {
+  text-align: center;
+}
+
+/* line 20, ../sass/layout.sass */
+h2 {
+  padding: 10px;
+}
+
+/* line 23, ../sass/layout.sass */
+.img-list li {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+/* line 26, ../sass/layout.sass */
+.img-list li img {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 30, ../sass/layout.sass */
+.layout-tags {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 34, ../sass/layout.sass */
+.switch-layout {
+  width: 98%;
+}
+/* line 36, ../sass/layout.sass */
+.switch-layout li {
+  float: left;
+  white-space: nowrap;
+  padding: 5px 10px;
+  line-height: 24px;
+  cursor: pointer;
+}
+/* line 42, ../sass/layout.sass */
+.switch-layout li span {
+  font-weight: bold;
+}
+/* line 44, ../sass/layout.sass */
+.switch-layout li i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 48, ../sass/layout.sass */
+.header, .ft {
+  padding: 10px;
+  color: white;
+  background: #3fa156;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 54, ../sass/layout.sass */
+.header {
+  margin-top: 250px;
+  background: #a31e39;
+}
+
+/* line 57, ../sass/layout.sass */
+.ft {
+  clear: both;
+  zoom: 1;
+}
+
+/*基类 */
+/* line 62, ../sass/layout.sass */
+.module-a, .module-b, .module-c, .header {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* line 65, ../sass/layout.sass */
+.module-a {
+  background: #39b3d7;
+}
+
+/* line 67, ../sass/layout.sass */
+.module-b {
+  background: #f0ad4e;
+}
+
+/* line 69, ../sass/layout.sass */
+.module-c {
+  background: #d9534f;
+}
+
+/* line 71, ../sass/layout.sass */
+.module-a p, .module-b p, .module-c p {
+  padding: 10px;
+}
+
+/* line 74, ../sass/layout.sass */
+.style0 {
+  width: auto;
+}
+
+/*固定宽度自适应 */
+/* line 78, ../sass/layout.sass */
+.style1 {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*主体先出现 - 左侧固定右侧自适应 */
+/* line 84, ../sass/layout.sass */
+.style2 .module-a {
+  float: right;
+  width: 100%;
+  margin-left: -200px;
+  background: none;
+}
+/* line 89, ../sass/layout.sass */
+.style2 .module-a .module-box {
+  margin-left: 200px;
+  background: #39b3d7;
+}
+/* line 92, ../sass/layout.sass */
+.style2 .module-b {
+  float: right;
+  width: 200px;
+}
+/* line 95, ../sass/layout.sass */
+.style2 .module-c {
+  clear: both;
+  zoom: 1;
+}
+
+/*主体先出现 - 右侧固定左侧自适应 */
+/* line 102, ../sass/layout.sass */
+.style3 .module-a {
+  float: left;
+  width: 100%;
+  margin-left: -200px;
+  background: none;
+}
+/* line 108, ../sass/layout.sass */
+.style3 .module-a .module-box {
+  margin-left: 200px;
+  background: #39b3d7;
+}
+/* line 111, ../sass/layout.sass */
+.style3 .module-b {
+  float: left;
+  width: 200px;
+}
+/* line 114, ../sass/layout.sass */
+.style3 .module-c {
+  clear: both;
+  zoom: 1;
+}
+
+/*三栏等高 */
+/* line 120, ../sass/layout.sass */
+.style4 {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+/* line 123, ../sass/layout.sass */
+.style4 .module-a, .style4 .module-b, .style4 .module-c {
+  float: left;
+  width: 33%;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+}
+
+/* 三栏左右固定 中间自适应   固定 百分比 固定 */
+/* line 132, ../sass/layout.sass */
+.style5 .module-a {
+  float: left;
+  width: 300px;
+}
+/* line 135, ../sass/layout.sass */
+.style5 .module-b {
+  float: right;
+  width: 300px;
+}
+/* line 138, ../sass/layout.sass */
+.style5 .module-c {
+  background: none;
+}
+/* line 140, ../sass/layout.sass */
+.style5 .module-c .module-box {
+  margin: 0 300px;
+  _margin: 0 297px;
+  background: #d9534f;
+}
+
+/*左两栏固定右侧自适应 固定 固定 百分比 */
+/* line 149, ../sass/layout.sass */
+.style6 .module-a, .style6 .module-b {
+  float: left;
+  width: 300px;
+}
+/* line 152, ../sass/layout.sass */
+.style6 .module-c {
+  float: left;
+  width: 100%;
+  margin-left: -600px;
+  background: none;
+}
+/* line 157, ../sass/layout.sass */
+.style6 .module-c .module-box {
+  margin-left: 600px;
+  background: #d9534f;
+}
+
+/*左两栏固定右侧自适应 百分比 固定 固定 */
+/* line 164, ../sass/layout.sass */
+.style7 .module-a {
+  float: left;
+  width: 100%;
+  margin-left: -600px;
+}
+/* line 168, ../sass/layout.sass */
+.style7 .module-a .module-box {
+  margin-left: 600px;
+}
+/* line 170, ../sass/layout.sass */
+.style7 .module-b, .style7 .module-c {
+  float: right;
+  width: 300px;
+}
+
+/*中间固定左右自适应A 百分比 固定 百分比 */
+/* line 176, ../sass/layout.sass */
+.style8 .module-a {
+  float: left;
+  width: 50%;
+  margin-left: -251px;
+}
+/* line 180, ../sass/layout.sass */
+.style8 .module-a .module-box {
+  margin-left: 251px;
+}
+/* line 182, ../sass/layout.sass */
+.style8 .module-b {
+  float: left;
+  width: 500px;
+}
+/* line 185, ../sass/layout.sass */
+.style8 .module-c {
+  float: left;
+  width: 50%;
+  margin-left: -251px;
+  background: none;
+}
+/* line 190, ../sass/layout.sass */
+.style8 .module-c .module-box {
+  margin-left: 251px;
+  background: #d9534f;
+}
+
+/*中间固定左右自适应B 百分比 固定 百分比 */
+/* line 196, ../sass/layout.sass */
+.style9 .module-a {
+  float: left;
+  width: 40%;
+}
+/* line 199, ../sass/layout.sass */
+.style9 .module-b {
+  float: left;
+  width: 400px;
+}
+/* line 202, ../sass/layout.sass */
+.style9 .module-c {
+  margin-left: 40%;
+  background: none;
+}
+/* line 205, ../sass/layout.sass */
+.style9 .module-c .module-box {
+  margin-left: 400px;
+  background: #d9534f;
+}
+
+/*左侧固定 右两栏自适应 固定 百分比 百分比 */
+/* line 211, ../sass/layout.sass */
+.style10 .module-a {
+  float: left;
+  width: 300px;
+}
+/* line 214, ../sass/layout.sass */
+.style10 .module-b {
+  float: left;
+  width: 40%;
+}
+/* line 217, ../sass/layout.sass */
+.style10 .module-c {
+  margin-left: 40%;
+  background: none;
+}
+/* line 220, ../sass/layout.sass */
+.style10 .module-c .module-box {
+  margin-left: 300px;
+  background: #d9534f;
+}
+
+/*右侧固定 左两栏自适应 百分比 百分比 固定 */
+/* line 226, ../sass/layout.sass */
+.style11 .module-a {
+  float: left;
+  width: 30%;
+}
+/* line 229, ../sass/layout.sass */
+.style11 .module-b {
+  float: right;
+  width: 300px;
+}
+/* line 232, ../sass/layout.sass */
+.style11 .module-c {
+  margin: 0 300px 0 30%;
+}
