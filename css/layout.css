@@ -48,6 +48,7 @@ h2 {
 }
 .switch-layout li span {
   font-weight: bold;
+  font-size: 13px;
 }
 .switch-layout li i {
   font-style: normal;
