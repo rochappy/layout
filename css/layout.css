@@ -26,6 +26,10 @@ h2 {
   padding: 10px;
 }
 
+#main {
+  margin-top: 150px;
+}
+
 .layout-tags {
   position: absolute;
   top: 0;
@@ -50,7 +54,7 @@ h2 {
   font-weight: normal;
 }
 
-.header, .ft {
+.head, .ft {
   padding: 10px;
   color: white;
   background: #3fa156;
@@ -58,7 +62,7 @@ h2 {
   text-align: center;
 }
 
-.header {
+.head {
   margin-top: 250px 0 10px;
   background: #a31e39;
   color: white;
@@ -91,185 +95,185 @@ h2 {
   padding: 10px;
 }
 
-.style0 {
+.width-auto {
   width: auto;
 }
 
 /*固定宽度自适应 */
-.style1 {
+.fixed-width-auto {
   width: 960px;
   margin: 0 auto;
 }
 
 /*主体先出现 - 左侧固定右侧自适应 */
-.style2 .module-a {
+.fixed-auto .module-a {
   float: right;
   width: 100%;
   margin-left: -200px;
   background: none;
 }
-.style2 .module-a .module-box {
+.fixed-auto .module-a .module-box {
   margin-left: 200px;
   background: #39b3d7;
 }
-.style2 .module-b {
+.fixed-auto .module-b {
   float: right;
   width: 200px;
 }
-.style2 .module-c {
+.fixed-auto .module-c {
   clear: both;
   zoom: 1;
 }
 
 /*主体先出现 - 右侧固定左侧自适应 */
-.style3 .module-a {
+.auto-fixed .module-a {
   float: left;
   width: 100%;
   margin-left: -200px;
   background: none;
 }
-.style3 .module-a .module-box {
+.auto-fixed .module-a .module-box {
   margin-left: 200px;
   background: #39b3d7;
 }
-.style3 .module-b {
+.auto-fixed .module-b {
   float: left;
   width: 200px;
 }
-.style3 .module-c {
+.auto-fixed .module-c {
   clear: both;
   zoom: 1;
 }
 
 /*三栏等高 */
-.style4 {
-  margin-bottom: 10px;
+.contour .body {
   overflow: hidden;
+  _zoom: 1;
 }
-.style4 .module-a, .style4 .module-b, .style4 .module-c {
+.contour .module-a, .contour .module-b, .contour .module-c {
   float: left;
-  width: 33%;
+  width: 33.33%;
   padding-bottom: 2000px;
   margin-bottom: -2000px;
 }
 
-/* 三栏左右固定 中间自适应   固定 百分比 固定 */
-.style5 .module-a {
+/* 三栏左右固定 中间自适应   固定 自适应 固定 */
+.fixed-auto-fixed .module-a {
   float: left;
   width: 300px;
 }
-.style5 .module-b {
+.fixed-auto-fixed .module-b {
   float: right;
   width: 300px;
 }
-.style5 .module-c {
+.fixed-auto-fixed .module-c {
   background: none;
 }
-.style5 .module-c .module-box {
+.fixed-auto-fixed .module-c .module-box {
   margin: 0 300px;
   _margin: 0 297px;
   background: #d9534f;
 }
 
-/*左两栏固定右侧自适应 固定 固定 百分比 */
-.style6 .module-a, .style6 .module-b {
+/*左两栏固定右侧自适应 固定 固定 自适应 */
+.fixed-fixed-auto .module-a, .fixed-fixed-auto .module-b {
   float: left;
   width: 300px;
 }
-.style6 .module-c {
+.fixed-fixed-auto .module-c {
   float: left;
   width: 100%;
   margin-left: -600px;
   background: none;
 }
-.style6 .module-c .module-box {
+.fixed-fixed-auto .module-c .module-box {
   margin-left: 600px;
   background: #d9534f;
 }
 
-/*左两栏固定右侧自适应 百分比 固定 固定 */
-.style7 .module-a {
+/*左两栏固定右侧自适应 自适应 固定 固定 */
+.auto-fixed-fixed .module-a {
   float: left;
   width: 100%;
   margin-left: -600px;
 }
-.style7 .module-a .module-box {
+.auto-fixed-fixed .module-a .module-box {
   margin-left: 600px;
 }
-.style7 .module-b, .style7 .module-c {
+.auto-fixed-fixed .module-b, .auto-fixed-fixed .module-c {
   float: right;
   width: 300px;
 }
 
-/*中间固定左右自适应A 百分比 固定 百分比 */
-.style8 .module-a {
+/*中间固定左右自适应A 自适应 固定 自适应 */
+.auto-fixed-auto1 .module-a {
   float: left;
   width: 50%;
   margin-left: -251px;
 }
-.style8 .module-a .module-box {
+.auto-fixed-auto1 .module-a .module-box {
   margin-left: 251px;
 }
-.style8 .module-b {
+.auto-fixed-auto1 .module-b {
   float: left;
   width: 500px;
 }
-.style8 .module-c {
+.auto-fixed-auto1 .module-c {
   float: left;
   width: 50%;
   margin-left: -251px;
   background: none;
 }
-.style8 .module-c .module-box {
+.auto-fixed-auto1 .module-c .module-box {
   margin-left: 251px;
   background: #d9534f;
 }
 
-/*中间固定左右自适应B 百分比 固定 百分比 */
-.style9 .module-a {
+/*中间固定左右自适应B 自适应 固定 自适应 */
+.auto-fixed-auto2 .module-a {
   float: left;
   width: 40%;
 }
-.style9 .module-b {
+.auto-fixed-auto2 .module-b {
   float: left;
   width: 400px;
 }
-.style9 .module-c {
+.auto-fixed-auto2 .module-c {
   margin-left: 40%;
   background: none;
 }
-.style9 .module-c .module-box {
+.auto-fixed-auto2 .module-c .module-box {
   margin-left: 400px;
   background: #d9534f;
 }
 
-/*左侧固定 右两栏自适应 固定 百分比 百分比 */
-.style10 .module-a {
+/*左侧固定 右两栏自适应 固定 自适应 自适应 */
+.fixed-auto-auto .module-a {
   float: left;
   width: 300px;
 }
-.style10 .module-b {
+.fixed-auto-auto .module-b {
   float: left;
   width: 40%;
 }
-.style10 .module-c {
+.fixed-auto-auto .module-c {
   margin-left: 40%;
   background: none;
 }
-.style10 .module-c .module-box {
+.fixed-auto-auto .module-c .module-box {
   margin-left: 300px;
   background: #d9534f;
 }
 
-/*右侧固定 左两栏自适应 百分比 百分比 固定 */
-.style11 .module-a {
+/*右侧固定 左两栏自适应 自适应 自适应 固定 */
+.auto-auto-fixed .module-a {
   float: left;
   width: 30%;
 }
-.style11 .module-b {
+.auto-auto-fixed .module-b {
   float: right;
   width: 300px;
 }
-.style11 .module-c {
+.auto-auto-fixed .module-c {
   margin: 0 300px 0 30%;
 }

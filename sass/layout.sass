@@ -20,6 +20,8 @@ h1
 h2
     padding: 10px
 
+#main
+    margin-top: 150px
 .layout-tags
     position: absolute
     top: 0
@@ -38,13 +40,13 @@ h2
             font-style: normal
             font-weight: normal
 
-.header, .ft
+.head, .ft
     padding: 10px
     color: #fff
     background: #3FA156
     font-size: 30px
     text-align: center
-.header
+.head
     margin-top: 250px 0 10px
     background: #A31E39
     color: #fff
@@ -66,16 +68,16 @@ h2
     p
         padding: 10px
 
-.style0
+.width-auto
     width: auto
 
 /*固定宽度自适应*/
-.style1
+.fixed-width-auto
     width: 960px
     margin: 0 auto
 
 /*主体先出现 - 左侧固定右侧自适应*/
-.style2
+.fixed-auto
     .module-a
         float: right
         width: 100%
@@ -93,7 +95,7 @@ h2
 
 
 /*主体先出现 - 右侧固定左侧自适应*/
-.style3
+.auto-fixed
     .module-a
         float: left
         width: 100%
@@ -112,18 +114,19 @@ h2
 
 
 /*三栏等高*/
-.style4
-    margin-bottom: 10px
-    overflow: hidden
+.contour
+    .body
+        overflow: hidden
+        _zoom: 1
     .module-a, .module-b, .module-c
         float: left
-        width: 33%
+        width: 33.33%
         padding-bottom: 2000px
         margin-bottom: -2000px
 
 
-/* 三栏左右固定 中间自适应   固定 百分比 固定*/
-.style5
+/* 三栏左右固定 中间自适应   固定 自适应 固定*/
+.fixed-auto-fixed
     .module-a
         float: left
         width: 300px
@@ -139,8 +142,8 @@ h2
 
 
 
-/*左两栏固定右侧自适应 固定 固定 百分比*/
-.style6
+/*左两栏固定右侧自适应 固定 固定 自适应*/
+.fixed-fixed-auto
     .module-a, .module-b
         float: left
         width: 300px
@@ -154,8 +157,8 @@ h2
             background: $color3
 
 
-/*左两栏固定右侧自适应 百分比 固定 固定 */
-.style7
+/*左两栏固定右侧自适应 自适应 固定 固定 */
+.auto-fixed-fixed
     .module-a
         float: left
         width: 100%
@@ -166,8 +169,8 @@ h2
         float: right
         width: 300px
 
-/*中间固定左右自适应A 百分比 固定 百分比*/
-.style8
+/*中间固定左右自适应A 自适应 固定 自适应*/
+.auto-fixed-auto1
     .module-a
         float: left
         width: 50%
@@ -186,8 +189,8 @@ h2
             margin-left: 251px
             background: $color3
 
-/*中间固定左右自适应B 百分比 固定 百分比*/
-.style9
+/*中间固定左右自适应B 自适应 固定 自适应*/
+.auto-fixed-auto2
     .module-a
         float: left
         width: 40%
@@ -201,8 +204,8 @@ h2
             margin-left: 400px
             background: $color3
 
-/*左侧固定 右两栏自适应 固定 百分比 百分比*/
-.style10
+/*左侧固定 右两栏自适应 固定 自适应 自适应*/
+.fixed-auto-auto
     .module-a
         float: left
         width: 300px
@@ -216,8 +219,8 @@ h2
             margin-left: 300px
             background: $color3
 
-/*右侧固定 左两栏自适应 百分比 百分比 固定*/
-.style11
+/*右侧固定 左两栏自适应 自适应 自适应 固定*/
+.auto-auto-fixed
     .module-a
         float: left
         width: 30%
