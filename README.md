@@ -1,8 +1,12 @@
-Layout
+Layout Example
 ==================================================
 layout
 
-Support
+Example
+--------------------------------------------------
+- [http://rochappy.github.io/layout](http://rochappy.github.io/layout)
+
+Supported browsers
 --------------------------------------------------
 - IE6+
 - Chrome
