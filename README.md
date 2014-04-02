@@ -1,22 +1,31 @@
-Layout Example
+项目介绍
 ==================================================
-Web Page layout subtotals
+常见的Web页面布局分类汇总，欢迎补充！
 
-Example
+示例 Demo
 --------------------------------------------------
 - [http://rochappy.github.io/layout](http://rochappy.github.io/layout)
 
-Development
+开发方式
 --------------------------------------------------
-Install [Node.js](http://nodejs.org) , npm , Grunt , ruby
+使用sass预编译处理css，需安装 [Node.js](http://nodejs.org) , npm , Grunt , ruby
 
-Compile Sass
+安装依赖
 ```bash
-cd lib && grunt watch
+cd lib && npm install
 ```
 
+lib目录运行，编译 Sass
+```bash
+grunt sass
+```
 
-Supported browsers
+lib目录运行，实时监控编译 Sass
+```bash
+grunt watch
+```
+
+支持浏览器
 --------------------------------------------------
 - IE6+
 - Chrome
