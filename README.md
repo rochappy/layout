@@ -13,15 +13,15 @@
 
 安装依赖
 ```bash
-cd lib && npm install
+npm install
 ```
 
-lib目录运行，编译 Sass
+编译 Sass
 ```bash
 grunt sass
 ```
 
-lib目录运行，实时监控编译 Sass
+实时监控编译 Sass
 ```bash
 grunt watch
 ```

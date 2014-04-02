@@ -1,8 +1,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         dirs: {
-            css: '../css/',
-            sass: '../sass/'
+            css: './css/',
+            sass: './sass/'
         },
 
         compass: {
