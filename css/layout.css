@@ -153,6 +153,7 @@ h2 {
 .contour .module-a, .contour .module-b, .contour .module-c {
   float: left;
   width: 33.33%;
+  _width: 33%;
   padding-bottom: 2000px;
   margin-bottom: -2000px;
 }
@@ -167,12 +168,7 @@ h2 {
   width: 300px;
 }
 .fixed-auto-fixed .module-c {
-  background: none;
-}
-.fixed-auto-fixed .module-c .module-box {
   margin: 0 300px;
-  _margin: 0 297px;
-  background: #d9534f;
 }
 
 /*左两栏固定右侧自适应 固定 固定 自适应 */
