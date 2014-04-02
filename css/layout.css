@@ -42,9 +42,7 @@ h2 {
 .switch-layout li {
   float: left;
   white-space: nowrap;
-  padding: 5px 10px;
-  line-height: 24px;
-  cursor: pointer;
+  padding: 5px;
 }
 .switch-layout li span {
   font-weight: bold;
@@ -162,29 +160,29 @@ h2 {
 /* 三栏左右固定 中间自适应   固定 自适应 固定 */
 .fixed-auto-fixed .module-a {
   float: left;
-  width: 300px;
+  width: 200px;
 }
 .fixed-auto-fixed .module-b {
   float: right;
-  width: 300px;
+  width: 200px;
 }
 .fixed-auto-fixed .module-c {
-  margin: 0 300px;
+  margin: 0 200px;
 }
 
 /*左两栏固定右侧自适应 固定 固定 自适应 */
 .fixed-fixed-auto .module-a, .fixed-fixed-auto .module-b {
   float: left;
-  width: 300px;
+  width: 200px;
 }
 .fixed-fixed-auto .module-c {
   float: left;
   width: 100%;
-  margin-left: -600px;
+  margin-left: -400px;
   background: none;
 }
 .fixed-fixed-auto .module-c .module-box {
-  margin-left: 600px;
+  margin-left: 400px;
   background: #d9534f;
 }
 
@@ -192,14 +190,14 @@ h2 {
 .auto-fixed-fixed .module-a {
   float: left;
   width: 100%;
-  margin-left: -600px;
+  margin-left: -400px;
 }
 .auto-fixed-fixed .module-a .module-box {
-  margin-left: 600px;
+  margin-left: 400px;
 }
 .auto-fixed-fixed .module-b, .auto-fixed-fixed .module-c {
   float: right;
-  width: 300px;
+  width: 200px;
 }
 
 /*中间固定左右自适应A 自适应 固定 自适应 */
@@ -229,18 +227,18 @@ h2 {
 /*中间固定左右自适应B 自适应 固定 自适应 */
 .auto-fixed-auto2 .module-a {
   float: left;
-  width: 40%;
+  width: 30%;
 }
 .auto-fixed-auto2 .module-b {
   float: left;
-  width: 400px;
+  width: 300px;
 }
 .auto-fixed-auto2 .module-c {
-  margin-left: 40%;
+  margin-left: 30%;
   background: none;
 }
 .auto-fixed-auto2 .module-c .module-box {
-  margin-left: 400px;
+  margin-left: 300px;
   background: #d9534f;
 }
 
@@ -251,10 +249,10 @@ h2 {
 }
 .fixed-auto-auto .module-b {
   float: left;
-  width: 40%;
+  width: 30%;
 }
 .fixed-auto-auto .module-c {
-  margin-left: 40%;
+  margin-left: 30%;
   background: none;
 }
 .fixed-auto-auto .module-c .module-box {

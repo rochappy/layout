@@ -6,42 +6,42 @@
 		styles = [
 			{
 				'cls': 'width-auto',
-				'desc': '宽度自适应',
+				'desc': '宽自适应',
 				'layout': '自适应'
 			},
 			{
 				'cls': 'fixed-width-auto',
-				'desc': '固定宽度自适应',
+				'desc': '固定宽自适应',
 				'layout': '固定居中'
 			},
 			{
 				'cls': 'fixed-auto',
-				'desc': '主体先出现 - 左侧固定右侧自适应',
+				'desc': '主体先出现 - 左固定右自适应',
 				'layout': '固定 自适应'
 			},
 			{
 				'cls': 'auto-fixed',
-				'desc': '主体先出现 - 右侧固定左侧自适应',
+				'desc': '主体先出现 - 右固定左自适应',
 				'layout': '自适应 固定'
 			},
 			{
 				'cls': 'contour',
 				'desc': '三栏等高',
-				'layout': '等高  等高 等高'
+				'layout': '等高 等高 等高'
 			},
 			{
 				'cls': 'fixed-auto-fixed',
-				'desc': '三栏左右固定 中间自适应',
+				'desc': '左右固定 中间自适应',
 				'layout': '固定 自适应 固定'
 			},
 			{
 				'cls': 'fixed-fixed-auto',
-				'desc': '左两栏固定右侧自适应',
+				'desc': '左两栏固定右自适应',
 				'layout': '固定 固定 自适应'
 			},
 			{
 				'cls': 'auto-fixed-fixed',
-				'desc': '左侧适应右两栏固定',
+				'desc': '左适应右两栏固定',
 				'layout': '适应 固定 固定 '
 			},
 			{
@@ -56,12 +56,12 @@
 			},
 			{
 				'cls': 'fixed-auto-auto',
-				'desc': '左侧固定 右两栏自适应',
+				'desc': '左固定 右两栏自适应',
 				'layout': '固定 自适应 自适应'
 			},
 			{
 				'cls': 'auto-auto-fixed',
-				'desc': '右侧固定 左两栏自适应',
+				'desc': '右固定 左两栏自适应',
 				'layout': ' 自适应 自适应 固定'
 			}
 		];

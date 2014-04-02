@@ -31,9 +31,7 @@ h2
     li
         float: left
         white-space: nowrap
-        padding: 5px 10px
-        line-height: 24px
-        cursor: pointer
+        padding: 5px
         span
             font-weight: bold
             font-size: 13px
@@ -131,26 +129,26 @@ h2
 .fixed-auto-fixed
     .module-a
         float: left
-        width: 300px
+        width: 200px
     .module-b
         float: right
-        width: 300px
+        width: 200px
     .module-c
-        margin: 0 300px
+        margin: 0 200px
 
 
 /*左两栏固定右侧自适应 固定 固定 自适应*/
 .fixed-fixed-auto
     .module-a, .module-b
         float: left
-        width: 300px
+        width: 200px
     .module-c
         float: left
         width: 100%
-        margin-left: -600px
+        margin-left: -400px
         background: none
         .module-box
-            margin-left: 600px
+            margin-left: 400px
             background: $color3
 
 
@@ -159,12 +157,12 @@ h2
     .module-a
         float: left
         width: 100%
-        margin-left: -600px
+        margin-left: -400px
         .module-box
-            margin-left: 600px
+            margin-left: 400px
     .module-b, .module-c
         float: right
-        width: 300px
+        width: 200px
 
 /*中间固定左右自适应A 自适应 固定 自适应*/
 .auto-fixed-auto1
@@ -190,15 +188,15 @@ h2
 .auto-fixed-auto2
     .module-a
         float: left
-        width: 40%
+        width: 30%
     .module-b
         float: left
-        width: 400px
+        width: 300px
     .module-c
-        margin-left: 40%
+        margin-left: 30%
         background: none
         .module-box
-            margin-left: 400px
+            margin-left: 300px
             background: $color3
 
 /*左侧固定 右两栏自适应 固定 自适应 自适应*/
@@ -208,9 +206,9 @@ h2
         width: 300px
     .module-b
         float: left
-        width: 40%
+        width: 30%
     .module-c
-        margin-left: 40%
+        margin-left: 30%
         background: none
         .module-box
             margin-left: 300px
