@@ -1,3 +1,5 @@
 # Node modules
 node_modules
+
+#Compile Sass
 .sass-cache
