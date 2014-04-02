@@ -8,7 +8,8 @@ Example
 
 Development
 --------------------------------------------------
-Install [http://nodejs.org/](Node.js) , npm , Grunt ,ruby
+Install [Node.js](http://nodejs.org) , npm , Grunt , ruby
+
 Compile Sass
 ```bash
 cd lib && grunt watch
