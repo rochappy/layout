@@ -1,6 +1,7 @@
 项目介绍
 ==================================================
 页面布局种类有很多，但万变不离其宗，归纳总结出11中布局方式。
+
 常见的Web页面布局分类汇总，欢迎补充！
 
 示例 Demo
@@ -9,9 +10,9 @@
 
 开发方式
 --------------------------------------------------
-使用sass预编译处理css，需安装 [Node.js](http://nodejs.org) , npm , Grunt , ruby
+使用sass预编译处理css，需安装 [Node.js](http://nodejs.org) , [npm](https://www.npmjs.org/) , [Grunt](http://gruntjs.com/) , [ruby](https://www.ruby-lang.org/zh_cn/)
 
-安装依赖
+安装 node_modules
 ```bash
 npm install
 ```
