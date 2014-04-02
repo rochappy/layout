@@ -20,13 +20,6 @@ h1
 h2
     padding: 10px
 
-.img-list li
-    float: left
-    margin: 0 10px 10px 0
-    img
-        width: 100px
-        height: 100px
-
 .layout-tags
     position: absolute
     top: 0
@@ -52,14 +45,15 @@ h2
     font-size: 30px
     text-align: center
 .header
-    margin-top: 250px
+    margin-top: 250px 0 10px
     background: #A31E39
+    color: #fff
 .ft
     clear: both
     zoom: 1
 
 /*基类*/
-.module-a, .module-b, .module-c, .header
+.module-a, .module-b, .module-c
     margin-bottom: 10px
     color: #fff
 .module-a
@@ -68,8 +62,9 @@ h2
     background: $color2
 .module-c
     background: $color3
-.module-a p, .module-b p, .module-c p
-    padding: 10px
+.module-a, .module-b, .module-c
+    p
+        padding: 10px
 
 .style0
     width: auto
