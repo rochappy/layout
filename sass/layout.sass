@@ -1,3 +1,6 @@
+@import compass
+
+// modlue custom color
 $color1: #39b3d7
 $color2: #f0ad4e
 $color3: #d9534f
@@ -6,11 +9,7 @@ ul, h1, h2, h3, p
     padding: 0
     margin: 0
 .clearfix
-    *zoom: 1
-    &:after
-        content: ""
-        display: table
-        clear: both
+    +pie-clearfix()
 
 ul
     list-style: none
@@ -29,7 +28,7 @@ h2
 .switch-layout
     width: 98%
     li
-        float: left
+        +float-left
         white-space: nowrap
         padding: 5px
         span
@@ -78,7 +77,7 @@ h2
 /*主体先出现 - 左侧固定右侧自适应*/
 .fixed-auto
     .module-a
-        float: right
+        +float-right
         width: 100%
         margin-left: -200px
         background: none
@@ -86,7 +85,7 @@ h2
             margin-left: 200px
             background: $color1
     .module-b
-        float: right
+        +float-right
         width: 200px
     .module-c
         clear: both
@@ -96,7 +95,7 @@ h2
 /*主体先出现 - 右侧固定左侧自适应*/
 .auto-fixed
     .module-a
-        float: left
+        +float-left
         width: 100%
         margin-left: -200px
         background: none
@@ -105,7 +104,7 @@ h2
             margin-left: 200px
             background: $color1
     .module-b
-        float: left
+        +float-left
         width: 200px
     .module-c
         clear: both
@@ -118,7 +117,7 @@ h2
         overflow: hidden
         _zoom: 1
     .module-a, .module-b, .module-c
-        float: left
+        +float-left
         width: 33.33%
         _width: 33%
         padding-bottom: 2000px
@@ -128,10 +127,10 @@ h2
 /* 三栏左右固定 中间自适应   固定 自适应 固定*/
 .fixed-auto-fixed
     .module-a
-        float: left
+        +float-left
         width: 200px
     .module-b
-        float: right
+        +float-right
         width: 200px
     .module-c
         margin: 0 200px
@@ -140,10 +139,10 @@ h2
 /*左两栏固定右侧自适应 固定 固定 自适应*/
 .fixed-fixed-auto
     .module-a, .module-b
-        float: left
+        +float-left
         width: 200px
     .module-c
-        float: left
+        +float-left
         width: 100%
         margin-left: -400px
         background: none
@@ -155,28 +154,28 @@ h2
 /*左两栏固定右侧自适应 自适应 固定 固定 */
 .auto-fixed-fixed
     .module-a
-        float: left
+        +float-left
         width: 100%
         margin-left: -400px
         .module-box
             margin-left: 400px
     .module-b, .module-c
-        float: right
+        +float-right
         width: 200px
 
 /*中间固定左右自适应A 自适应 固定 自适应*/
 .auto-fixed-auto1
     .module-a
-        float: left
+        +float-left
         width: 50%
         margin-left: -251px
         .module-box
             margin-left: 251px
     .module-b
-        float: left
+        +float-left
         width: 500px
     .module-c
-        float: left
+        +float-left
         width: 50%
         margin-left: -251px
         background: none
@@ -187,10 +186,10 @@ h2
 /*中间固定左右自适应B 自适应 固定 自适应*/
 .auto-fixed-auto2
     .module-a
-        float: left
+        +float-left
         width: 30%
     .module-b
-        float: left
+        +float-left
         width: 300px
     .module-c
         margin-left: 30%
@@ -202,10 +201,10 @@ h2
 /*左侧固定 右两栏自适应 固定 自适应 自适应*/
 .fixed-auto-auto
     .module-a
-        float: left
+        +float-left
         width: 300px
     .module-b
-        float: left
+        +float-left
         width: 30%
     .module-c
         margin-left: 30%
@@ -217,10 +216,10 @@ h2
 /*右侧固定 左两栏自适应 自适应 自适应 固定*/
 .auto-auto-fixed
     .module-a
-        float: left
+        +float-left
         width: 30%
     .module-b
-        float: right
+        +float-right
         width: 300px
     .module-c
         margin: 0 300px 0 30%

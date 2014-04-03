@@ -10,7 +10,7 @@
 
 开发方式
 --------------------------------------------------
-使用sass预编译处理css，需安装 [Node.js](http://nodejs.org) , [npm](https://www.npmjs.org/) , [Grunt](http://gruntjs.com/) , [ruby](https://www.ruby-lang.org/zh_cn/)
+使用sass预编译处理css，需安装 [Node.js](http://nodejs.org) , [npm](https://www.npmjs.org/) , [Grunt](http://gruntjs.com/) , [Ruby](https://www.ruby-lang.org/zh_cn/) [compass](http://compass-style.org/install)
 
 安装 node_modules
 ```bash
