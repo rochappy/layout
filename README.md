@@ -14,17 +14,17 @@
 
 使用sass预编译处理css，需安装 [Node.js](http://nodejs.org) , [npm](https://www.npmjs.org/) , [Grunt](http://gruntjs.com/) , [Ruby](https://www.ruby-lang.org/zh_cn/) , [compass](http://compass-style.org/install)
 
-###安装 node_modules
+####安装 node_modules
 ```bash
 npm install
 ```
 
-###编译 Sass
+####编译 Sass
 ```bash
 grunt sass
 ```
 
-###实时监控编译 Sass
+####实时监控编译 Sass
 ```bash
 grunt watch
 ```
