@@ -29,4 +29,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['compass:compile']);
+    grunt.registerTask('sass', ['compass:compile']);
 };
