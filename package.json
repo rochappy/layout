@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "script": {
     "start": "grunt server"
+    "test": "grunt"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
