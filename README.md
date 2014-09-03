@@ -11,26 +11,24 @@
 ![Screenshot](https://raw.githubusercontent.com/rochappy/layout/master/docs/img/basic.jpg)
 
 ##开发方式
-
-使用sass预编译处理css，需安装 [Node.js](http://nodejs.org) , [npm](https://www.npmjs.org/) , [Grunt](http://gruntjs.com/) , [Ruby](https://www.ruby-lang.org/zh_cn/) , [compass](http://compass-style.org/install)
-
+基于 [nobone](http://github.com/ysmood/nobone) 开发
 ###安装 node_modules
 ```bash
 npm install
 ```
 
-###编译 Sass
+###运行
 ```bash
-grunt sass
+nobone
 ```
+默认port：`8013`
 
-###实时监控编译 Sass
+或运行
 ```bash
-grunt watch
+nobone -p 8017
 ```
 
 ##支持浏览器
-
 - IE6+
 - Chrome
 - Firefox

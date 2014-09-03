@@ -1,13 +1,11 @@
 {
   "name": "layout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "script": {
-    "test": "grunt watch"
+    "test": "nobone"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-compass": "~0.6.0",
-    "grunt-contrib-watch": "~0.6.0",
-    "grunt-contrib-sass": "0.7.0"
+    "nobone": "*",
+    "styl": ""
   }
 }
