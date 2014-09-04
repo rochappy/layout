@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="rochappy||rochappy.sun" />
+<title>Web Page Layout</title>
+<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" href="css/layout.css" media="all" />
+</head>
+<body>
+<a href="http://github.com/rochappy/layout"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 50" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+<div class="layout-tags">
+    <ul class="switch-layout clearfix" id="switch-layout">
+        <li>加载中...</li>
+    </ul>
+</div>
+<div class="main" id="main">
+    <div class="head">Header</div>
+    <div class="body">
+        <div class="module-a">
+            <div class="module-box">
+                <h2>模块 A</h2>
+                <ul>
+                    <li>我是模块A</li>
+                </ul>
+            </div>
+        </div>
+        <div class="module-b">
+            <div class="module-box">
+                <h2>模块 B</h2>
+                <ul>
+                    <li>我是模块B</li>
+                    <li>我是模块B</li>
+                </ul>
+            </div>
+        </div>
+        <div class="module-c">
+            <div class="module-box">
+            <h2>模块 C</h2>
+            <ul>
+                <li>我是模块C</li>
+                <li>我是模块C</li>
+                <li>我是模块C</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ft">Footer</div>
+</div>
+<pre>
+Author: rochappy || rochappy.sun
+Create: 2011-05-26
+Modified: 2013-01-18
+</pre>
+
+</body>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://underscorejs.org/underscore.js"></script>
+<script src="js/core.js"></script>
+<script id="layout-item" type="template">
+    <li data-cls="<%- item.cls %>"><span class="btn btn-default"><%- index + 1 %>. <i><%- item.desc %></i> <br> <%- item.layout %></span></li>
+</script>
+</html>

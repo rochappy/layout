@@ -4,9 +4,9 @@
 
 常见的Web页面布局分类汇总，欢迎补充！
 
-##示例 [Demo](http://rochappy.github.io/layout)
+##示例 [Demo](http://rochappy.github.io/layout/dist)
 
-[http://rochappy.github.io/layout](http://rochappy.github.io/layout)
+[http://rochappy.github.io/layout](http://rochappy.github.io/layout/dist)
 
 ![Screenshot](https://raw.githubusercontent.com/rochappy/layout/master/docs/img/basic.jpg)
 

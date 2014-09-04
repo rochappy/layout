@@ -1,0 +1,280 @@
+ul,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+ul {
+  list-style: none;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  padding: 10px;
+}
+#main {
+  margin-top: 150px;
+}
+.layout-tags {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.switch-layout {
+  width: 98%;
+}
+.switch-layout li {
+  display: inline;
+  float: left;
+  white-space: nowrap;
+  padding: 5px;
+}
+.switch-layout li span {
+  font-weight: bold;
+  font-size: 13px;
+}
+.switch-layout li i {
+  font-style: normal;
+  font-weight: normal;
+}
+.head,
+.ft {
+  padding: 10px;
+  color: #fff;
+  background: #3fa156;
+  font-size: 30px;
+  text-align: center;
+}
+.head {
+  margin-top: 250px 0 10px;
+  background: #a31e39;
+  color: #fff;
+}
+.ft {
+  clear: both;
+  zoom: 1;
+}
+/*基类*/
+.module-a,
+.module-b,
+.module-c {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.module-a {
+  background: #39b3d7;
+}
+.module-b {
+  background: #f0ad4e;
+}
+.module-c {
+  background: #d9534f;
+}
+.module-a p,
+.module-b p,
+.module-c p {
+  padding: 10px;
+}
+.width-auto {
+  width: auto;
+}
+/*固定宽度自适应*/
+.fixed-width-auto {
+  width: 960px;
+  margin: 0 auto;
+}
+/*主体先出现 - 左侧固定右侧自适应*/
+.fixed-auto .module-a {
+  display: inline;
+  float: right;
+  width: 100%;
+  margin-left: -200px;
+  background: none;
+}
+.fixed-auto .module-a .module-box {
+  margin-left: 200px;
+  background: #39b3d7;
+}
+.fixed-auto .module-b {
+  display: inline;
+  float: right;
+  width: 200px;
+}
+.fixed-auto .module-c {
+  clear: both;
+  zoom: 1;
+}
+/*主体先出现 - 右侧固定左侧自适应*/
+.auto-fixed .module-a {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-left: -200px;
+  background: none;
+}
+.auto-fixed .module-a .module-box {
+  margin-left: 200px;
+  background: #39b3d7;
+}
+.auto-fixed .module-b {
+  display: inline;
+  float: left;
+  width: 200px;
+}
+.auto-fixed .module-c {
+  clear: both;
+  zoom: 1;
+}
+/*三栏等高*/
+.contour .body {
+  overflow: hidden;
+  _zoom: 1;
+}
+.contour .module-a,
+.contour .module-b,
+.contour .module-c {
+  display: inline;
+  float: left;
+  width: 33.33%;
+  _width: 33%;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+}
+/* 三栏左右固定 中间自适应   固定 自适应 固定*/
+.fixed-auto-fixed .module-a {
+  display: inline;
+  float: left;
+  width: 200px;
+}
+.fixed-auto-fixed .module-b {
+  display: inline;
+  float: right;
+  width: 200px;
+}
+.fixed-auto-fixed .module-c {
+  margin: 0 200px;
+}
+/*左两栏固定右侧自适应 固定 固定 自适应*/
+.fixed-fixed-auto .module-a,
+.fixed-fixed-auto .module-b {
+  display: inline;
+  float: left;
+  width: 200px;
+}
+.fixed-fixed-auto .module-c {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-left: -400px;
+  background: none;
+}
+.fixed-fixed-auto .module-c .module-box {
+  margin-left: 400px;
+  background: #d9534f;
+}
+/*左两栏固定右侧自适应 自适应 固定 固定 */
+.auto-fixed-fixed .module-a {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-left: -400px;
+}
+.auto-fixed-fixed .module-a .module-box {
+  margin-left: 400px;
+}
+.auto-fixed-fixed .module-b,
+.auto-fixed-fixed .module-c {
+  display: inline;
+  float: right;
+  width: 200px;
+}
+/*中间固定左右自适应A 自适应 固定 自适应*/
+.auto-fixed-auto1 .module-a {
+  display: inline;
+  float: left;
+  width: 50%;
+  margin-left: -251px;
+}
+.auto-fixed-auto1 .module-a .module-box {
+  margin-left: 251px;
+}
+.auto-fixed-auto1 .module-b {
+  display: inline;
+  float: left;
+  width: 500px;
+}
+.auto-fixed-auto1 .module-c {
+  display: inline;
+  float: left;
+  width: 50%;
+  margin-left: -251px;
+  background: none;
+}
+.auto-fixed-auto1 .module-c .module-box {
+  margin-left: 251px;
+  background: #d9534f;
+}
+/*中间固定左右自适应B 自适应 固定 自适应*/
+.auto-fixed-auto2 .module-a {
+  display: inline;
+  float: left;
+  width: 30%;
+}
+.auto-fixed-auto2 .module-b {
+  display: inline;
+  float: left;
+  width: 300px;
+}
+.auto-fixed-auto2 .module-c {
+  margin-left: 30%;
+  background: none;
+}
+.auto-fixed-auto2 .module-c .module-box {
+  margin-left: 300px;
+  background: #d9534f;
+}
+/*左侧固定 右两栏自适应 固定 自适应 自适应*/
+.fixed-auto-auto .module-a {
+  display: inline;
+  float: left;
+  width: 300px;
+}
+.fixed-auto-auto .module-b {
+  display: inline;
+  float: left;
+  width: 30%;
+}
+.fixed-auto-auto .module-c {
+  margin-left: 30%;
+  background: none;
+}
+.fixed-auto-auto .module-c .module-box {
+  margin-left: 300px;
+  background: #d9534f;
+}
+/*右侧固定 左两栏自适应 自适应 自适应 固定*/
+.auto-auto-fixed .module-a {
+  display: inline;
+  float: left;
+  width: 30%;
+}
+.auto-auto-fixed .module-b {
+  display: inline;
+  float: right;
+  width: 300px;
+}
+.auto-auto-fixed .module-c {
+  margin: 0 300px 0 30%;
+}

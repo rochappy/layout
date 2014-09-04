@@ -1,2 +1,6 @@
 # Node modules
 node_modules
+
+
+src/**/*/*.js
+src/**/*/*.css
