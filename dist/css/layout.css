@@ -44,6 +44,7 @@ h2 {
 .switch-layout li span {
   font-weight: bold;
   font-size: 13px;
+  cursor: pointer;
 }
 .switch-layout li i {
   font-style: normal;
